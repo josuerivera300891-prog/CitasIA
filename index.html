@@ -380,7 +380,7 @@
             </div>
             <div class="audience-grid">
                 <!-- Clínicas -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="clinicas">
                     <div class="audience-card-header">
                         <img src="assets/icon_medical_3d.png" alt="Clínicas" class="audience-icon-img">
                         <span class="audience-name">Clínicas y consultorios</span>
@@ -389,14 +389,28 @@
                         <span class="kb-title">Entrenada para:</span>
                         <ul class="kb-list">
                             <li class="kb-item">Gestión de especialidades</li>
-                            <li class="kb-item">Protocolos de preparación (ayuno)</li>
+                            <li class="kb-item">Protocolos de preparación</li>
                             <li class="kb-item">Validación de seguros médicos</li>
                         </ul>
+                    </div>
+                    <button class="view-demo-btn" onclick="startSimulation('clinicas', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
                     </div>
                 </div>
 
                 <!-- Salones -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="salones">
                     <div class="audience-card-header">
                         <img src="assets/icon_beauty_3d.png" alt="Salones de belleza" class="audience-icon-img">
                         <span class="audience-name">Salones de belleza</span>
@@ -409,10 +423,24 @@
                             <li class="kb-item">Recomendaciones post-tratamiento</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('salones', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Spas -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="spas">
                     <div class="audience-card-header">
                         <img src="assets/icon_wellness_3d.png" alt="Spas" class="audience-icon-img">
                         <span class="audience-name">Spas y bienestar</span>
@@ -425,10 +453,24 @@
                             <li class="kb-item">Encuestas de satisfacción</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('spas', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Abogados -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="abogados">
                     <div class="audience-card-header">
                         <img src="assets/icon_legal_3d.png" alt="Abogados" class="audience-icon-img">
                         <span class="audience-name">Abogados y notarios</span>
@@ -441,10 +483,24 @@
                             <li class="kb-item">Tarifario base y honorarios</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('abogados', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Contadores -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="contadores">
                     <div class="audience-card-header">
                         <img src="assets/icon_finance_3d.png" alt="Contadores" class="audience-icon-img">
                         <span class="audience-name">Contadores y asesores</span>
@@ -457,10 +513,24 @@
                             <li class="kb-item">Respuesta a leyes tributarias</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('contadores', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Gimnasios -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="gym">
                     <div class="audience-card-header">
                         <img src="assets/icon_fitness_3d.png" alt="Gimnasios" class="audience-icon-img">
                         <span class="audience-name">Gimnasios y fitness</span>
@@ -468,15 +538,29 @@
                     <div class="knowledge-base">
                         <span class="kb-title">Entrenada para:</span>
                         <ul class="kb-list">
-                            <li class="kb-item">Horarios de clases grupales</li>
-                            <li class="kb-item">Gestión de planes/membresías</li>
+                            <li class="kb-item">Horarios de clases</li>
+                            <li class="kb-item">Gestión de membresías</li>
                             <li class="kb-item">Guía nutricional básica</li>
                         </ul>
+                    </div>
+                    <button class="view-demo-btn" onclick="startSimulation('gym', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
                     </div>
                 </div>
 
                 <!-- Restaurantes -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="restaurantes">
                     <div class="audience-card-header">
                         <img src="assets/icon_restaurant_3d.png" alt="Restaurantes" class="audience-icon-img">
                         <span class="audience-name">Restaurantes con reservas</span>
@@ -489,10 +573,24 @@
                             <li class="kb-item">Alertas de alergias</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('restaurantes', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Servicios Técnicos -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="tecnico">
                     <div class="audience-card-header">
                         <img src="assets/icon_tech_3d.png" alt="Servicios técnicos" class="audience-icon-img">
                         <span class="audience-name">Servicios técnicos</span>
@@ -505,10 +603,24 @@
                             <li class="kb-item">Garantías y repuestos</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('tecnico', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Inmobiliarias -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="inmobiliaria">
                     <div class="audience-card-header">
                         <i data-lucide="home"></i>
                         <span class="audience-name">Inmobiliarias</span>
@@ -521,10 +633,24 @@
                             <li class="kb-item">Visitas guiadas y fotos</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('inmobiliaria', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Academias -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="academia">
                     <div class="audience-card-header">
                         <i data-lucide="graduation-cap"></i>
                         <span class="audience-name">Academias y tutores</span>
@@ -537,10 +663,24 @@
                             <li class="kb-item">Control de pagos y asistencia</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('academia', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Veterinarias -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="veterinaria">
                     <div class="audience-card-header">
                         <i data-lucide="dog"></i>
                         <span class="audience-name">Veterinarias</span>
@@ -553,10 +693,24 @@
                             <li class="kb-item">Recordatorios de tratamiento</li>
                         </ul>
                     </div>
+                    <button class="view-demo-btn" onclick="startSimulation('veterinaria', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
+                    </div>
                 </div>
 
                 <!-- Mecánicos -->
-                <div class="audience-card">
+                <div class="audience-card" data-industry="mecanico">
                     <div class="audience-card-header">
                         <i data-lucide="car"></i>
                         <span class="audience-name">Talleres mecánicos</span>
@@ -568,6 +722,20 @@
                             <li class="kb-item">Presupuestos estimados</li>
                             <li class="kb-item">Seguimiento de repuestos</li>
                         </ul>
+                    </div>
+                    <button class="view-demo-btn" onclick="startSimulation('mecanico', this)">
+                        <i data-lucide="play-circle"></i> Ver Simulación
+                    </button>
+                    <div class="chat-demo-container">
+                        <button class="close-chat" onclick="closeSimulation(this)">×</button>
+                        <div class="chat-header">
+                            <img src="assets/logo-citasia.png" alt="CitasIA">
+                            <div class="chat-header-info">
+                                <span>CitasIA Asistente</span>
+                                <small>En línea</small>
+                            </div>
+                        </div>
+                        <div class="chat-body"></div>
                     </div>
                 </div>
             </div>
@@ -930,6 +1098,120 @@
                 header.classList.remove('header-scrolled');
             }
         });
+
+        const simulations = {
+            clinicas: [
+                { role: 'client', content: 'Hola, necesito agendar una cita con el cardiólogo.' },
+                { role: 'ai', content: '¡Hola! Con gusto te ayuda CitasIA. El Dr. García tiene disponibilidad mañana a las 10:00 AM o el jueves a las 3:00 PM. ¿Cuál prefieres?' },
+                { role: 'client', content: 'Mañana a las 10:00 AM está bien.' },
+                { role: 'ai', content: 'Perfecto. Cita agendada. Antes de terminar, ¿cuentas con seguro médico? Trabajamos con Seguros Atlas y Continental.' }
+            ],
+            salones: [
+                { role: 'client', content: 'Hola, ¿qué precio tiene el balayage?' },
+                { role: 'ai', content: '¡Hola! El balayage varía según el largo de tu cabello, pero inicia desde $80. ¿Te gustaría agendar una valoración gratuita mañana?' },
+                { role: 'client', content: 'Sí, ¿a qué hora?' },
+                { role: 'ai', content: 'Tengo disponible a las 2:00 PM. ¿Te agendo? Recuerda nuestra política de cancelación de 24h.' }
+            ],
+            spas: [
+                { role: 'client', content: 'Hola, ¿tienen masajes para parejas hoy?' },
+                { role: 'ai', content: '¡Hola! Sí, tenemos una cabina doble disponible hoy a las 6:00 PM. El masaje incluye aromaterapia y piedras calientes. ¿Deseas reservarla?' }
+            ],
+            abogados: [
+                { role: 'client', content: 'Hola, necesito ayuda con un contrato de alquiler.' },
+                { role: 'ai', content: 'Entendido. Para asignarte al especialista correcto, ¿eres el dueño de la propiedad o el inquilino?' },
+                { role: 'client', content: 'Soy el dueño.' },
+                { role: 'ai', content: 'Gracias. He agendado una llamada inicial para mañana a las 9:00 AM para revisar el contrato. ¿Te envío el link de zoom?' }
+            ],
+            contadores: [
+                { role: 'client', content: '¿Cuándo vence mi declaración de IVA?' },
+                { role: 'ai', content: 'Hola. Según tu terminación de NIT, el vencimiento es el día 15 de cada mes. ¿Deseas que agendemos una revisión de tus documentos hoy?' }
+            ],
+            gym: [
+                { role: 'client', content: 'Hola, ¿a qué hora es la clase de CrossFit hoy?' },
+                { role: 'ai', content: '¡Hola! Hoy tenemos CrossFit a las 7:00 AM, 5:00 PM y 7:00 PM. Tenemos 3 cupos para la de las 5 PM. ¿Te anoto?' }
+            ],
+            restaurantes: [
+                { role: 'client', content: 'Hola, ¿tienen mesa para 4 hoy a las 8 PM?' },
+                { role: 'ai', content: '¡Hola! Sí tenemos disponibilidad en el área de la terraza. ¿Algún cumpleañero o alergia que debamos saber?' }
+            ],
+            tecnico: [
+                { role: 'client', content: 'Mi refrigerador no enfría bien.' },
+                { role: 'ai', content: 'Siento oír eso. ¿De casualidad hace algún ruido extraño o el panel digital muestra algún error?' },
+                { role: 'client', content: 'Hace un pitido constante.' },
+                { role: 'ai', content: 'Parece un error de sensor. El técnico puede pasar hoy entre 2 y 4 PM. ¿Alguien estará en casa?' }
+            ],
+            inmobiliaria: [
+                { role: 'client', content: 'Vi el depa de 2 habitaciones, ¿puedo verlo mañana?' },
+                { role: 'ai', content: '¡Claro! Ese depa está disponible. Tengo llaves para mostrarlo a las 11:00 AM o 4:00 PM. ¿Cuál te queda mejor?' }
+            ],
+            academia: [
+                { role: 'client', content: '¿Cuándo inician las clases de nivel básico?' },
+                { role: 'ai', content: '¡Hola! El nuevo ciclo inicia el próximo lunes. ¿Deseas que te envíe el temario y el link para la prueba de nivel gratuita?' }
+            ],
+            veterinaria: [
+                { role: 'client', content: 'Mi perro está vomitando mucho.' },
+                { role: 'ai', content: '¡Atención! Eso puede ser una emergencia. ¿Hace cuánto empezó? Te recomiendo traerlo a urgencias ahora mismo, estamos abiertos.' }
+            ],
+            mecanico: [
+                { role: 'client', content: '¿Cuánto sale el cambio de aceite para un Kia?' },
+                { role: 'ai', content: 'Hola. El servicio básico con aceite sintético sale en $65. Incluye revisión de frenos. ¿Te agendo para el sábado?' }
+            ]
+        };
+
+        window.startSimulation = function (industry, btn) {
+            const card = btn.closest('.audience-card');
+            const container = card.querySelector('.chat-demo-container');
+            const body = container.querySelector('.chat-body');
+            body.innerHTML = '';
+            container.classList.add('active');
+
+            let step = 0;
+            const scrollToEnd = () => body.scrollTop = body.scrollHeight;
+
+            function nextStep() {
+                if (step >= simulations[industry].length) return;
+
+                const msg = simulations[industry][step];
+
+                // Si es la IA, mostrar indicador de escritura
+                if (msg.role === 'ai') {
+                    const typing = document.createElement('div');
+                    typing.className = 'typing-indicator';
+                    typing.innerHTML = '<span></span><span></span><span></span>';
+                    typing.style.display = 'block';
+                    body.appendChild(typing);
+                    scrollToEnd();
+
+                    setTimeout(() => {
+                        body.removeChild(typing);
+                        addMessage(msg);
+                        step++;
+                        setTimeout(nextStep, 1500);
+                    }, 1500);
+                } else {
+                    // Si es el cliente, aparece más rápido
+                    setTimeout(() => {
+                        addMessage(msg);
+                        step++;
+                        setTimeout(nextStep, 1000);
+                    }, 500);
+                }
+            }
+
+            function addMessage(msg) {
+                const msgDiv = document.createElement('div');
+                msgDiv.className = `chat-message ${msg.role}`;
+                msgDiv.textContent = msg.content;
+                body.appendChild(msgDiv);
+                scrollToEnd();
+            }
+
+            nextStep();
+        };
+
+        window.closeSimulation = function (btn) {
+            btn.closest('.chat-demo-container').classList.remove('active');
+        };
 
         // Animate elements on scroll
         const observerOptions = {
