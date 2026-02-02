@@ -1102,59 +1102,101 @@
         const simulations = {
             clinicas: [
                 { role: 'client', content: 'Hola, necesito agendar una cita con el cardiólogo.' },
-                { role: 'ai', content: '¡Hola! Con gusto te ayuda CitasIA. El Dr. García tiene disponibilidad mañana a las 10:00 AM o el jueves a las 3:00 PM. ¿Cuál prefieres?' },
+                { role: 'ai', content: '¡Hola! Con gusto te ayuda CitasIA. ¿Me podrías decir tu nombre completo para iniciar el registro?' },
+                { role: 'client', content: 'Juan Pérez' },
+                { role: 'ai', content: 'Gracias, Juan. El Dr. García tiene disponibilidad mañana a las 10:00 AM o el jueves a las 3:00 PM. ¿Cuál prefieres?' },
                 { role: 'client', content: 'Mañana a las 10:00 AM está bien.' },
-                { role: 'ai', content: 'Perfecto. Cita agendada. Antes de terminar, ¿cuentas con seguro médico? Trabajamos con Seguros Atlas y Continental.' }
+                { role: 'ai', content: '¡Perfecto! ¿Cuentas con seguro médico? Trabajamos con Seguros Atlas y Continental.' },
+                { role: 'client', content: 'Sí, tengo Seguros Atlas.' },
+                { role: 'ai', content: 'Excelente. Tu cita ha sido agendada: Dr. García | Mañana 10:00 AM. Te enviaré un recordatorio 2h antes.' }
             ],
             salones: [
                 { role: 'client', content: 'Hola, ¿qué precio tiene el balayage?' },
-                { role: 'ai', content: '¡Hola! El balayage varía según el largo de tu cabello, pero inicia desde $80. ¿Te gustaría agendar una valoración gratuita mañana?' },
+                { role: 'ai', content: '¡Hola! El balayage varía según el largo de tu cabello, pero inicia desde $80. ¿Con quién tengo el gusto de hablar?' },
+                { role: 'client', content: 'Soy Maria Gomez.' },
+                { role: 'ai', content: 'Mucho gusto, Maria. ¿Te gustaría agendar una valoración gratuita mañana?' },
                 { role: 'client', content: 'Sí, ¿a qué hora?' },
-                { role: 'ai', content: 'Tengo disponible a las 2:00 PM. ¿Te agendo? Recuerda nuestra política de cancelación de 24h.' }
+                { role: 'ai', content: 'Tengo disponible a las 2:00 PM. ¿Te agendo? Recuerda nuestra política de cancelación de 24h.' },
+                { role: 'client', content: 'Sí, agéndame porfa.' },
+                { role: 'ai', content: '¡Listo, Maria! Valoración agendada para mañana 2:00 PM. ¡Te esperamos!' }
             ],
             spas: [
                 { role: 'client', content: 'Hola, ¿tienen masajes para parejas hoy?' },
-                { role: 'ai', content: '¡Hola! Sí, tenemos una cabina doble disponible hoy a las 6:00 PM. El masaje incluye aromaterapia y piedras calientes. ¿Deseas reservarla?' }
+                { role: 'ai', content: '¡Hola! Qué gusto saludarte. ¿Cuál es tu nombre?' },
+                { role: 'client', content: 'Carlos Ruiz.' },
+                { role: 'ai', content: 'Hola Carlos. Sí, tenemos una cabina doble disponible hoy a las 6:00 PM. ¿Te gustaría reservarla?' },
+                { role: 'client', content: 'Sí, por favor.' },
+                { role: 'ai', content: 'Perfecto, Carlos. Cabina reservada para hoy a las 6:00 PM. ¡Nos vemos pronto!' }
             ],
             abogados: [
                 { role: 'client', content: 'Hola, necesito ayuda con un contrato de alquiler.' },
-                { role: 'ai', content: 'Entendido. Para asignarte al especialista correcto, ¿eres el dueño de la propiedad o el inquilino?' },
-                { role: 'client', content: 'Soy el dueño.' },
-                { role: 'ai', content: 'Gracias. He agendado una llamada inicial para mañana a las 9:00 AM para revisar el contrato. ¿Te envío el link de zoom?' }
+                { role: 'ai', content: 'Entendido. Para asignarte al especialista correcto, ¿cuál es tu nombre y si eres el dueño o el inquilino?' },
+                { role: 'client', content: 'Soy Roberto Diaz, soy el dueño.' },
+                { role: 'ai', content: 'Gracias, Roberto. He agendado una llamada inicial para mañana a las 9:00 AM para revisar el contrato. ¿Te envío el link de zoom?' },
+                { role: 'client', content: 'Sí, envíamelo.' },
+                { role: 'ai', content: '¡Hecho! Link enviado a tu correo. Nos vemos mañana a las 9:00 AM.' }
             ],
             contadores: [
                 { role: 'client', content: '¿Cuándo vence mi declaración de IVA?' },
-                { role: 'ai', content: 'Hola. Según tu terminación de NIT, el vencimiento es el día 15 de cada mes. ¿Deseas que agendemos una revisión de tus documentos hoy?' }
+                { role: 'ai', content: '¡Hola! Con gusto te apoyo. ¿Me indicas tu nombre y los últimos dos dígitos de tu NIT?' },
+                { role: 'client', content: 'Sandra Luz, dígitos 45.' },
+                { role: 'ai', content: 'Gracias Sandra. Tu vencimiento es el día 15 de este mes. ¿Deseas que agendemos una revisión de tus documentos hoy?' },
+                { role: 'client', content: 'Sí, hoy a las 4 PM.' },
+                { role: 'ai', content: 'Agendado, Sandra. Te esperamos hoy a las 4:00 PM para la revisión fiscal.' }
             ],
             gym: [
                 { role: 'client', content: 'Hola, ¿a qué hora es la clase de CrossFit hoy?' },
-                { role: 'ai', content: '¡Hola! Hoy tenemos CrossFit a las 7:00 AM, 5:00 PM y 7:00 PM. Tenemos 3 cupos para la de las 5 PM. ¿Te anoto?' }
+                { role: 'ai', content: '¡Hola! Soy CitasIA. ¿Cuál es tu nombre?' },
+                { role: 'client', content: 'Alex Mora.' },
+                { role: 'ai', content: 'Hola Alex. Hoy tenemos CrossFit a las 5:00 PM y 7:00 PM. ¿A cuál quieres venir?' },
+                { role: 'client', content: 'A la de las 5 PM.' },
+                { role: 'ai', content: '¡Perfecto, Alex! Te he anotado para la clase de las 5:00 PM. ¡Trae mucha agua!' }
             ],
             restaurantes: [
                 { role: 'client', content: 'Hola, ¿tienen mesa para 4 hoy a las 8 PM?' },
-                { role: 'ai', content: '¡Hola! Sí tenemos disponibilidad en el área de la terraza. ¿Algún cumpleañero o alergia que debamos saber?' }
+                { role: 'ai', content: '¡Hola! Qué gusto saludarte. ¿A nombre de quién hago la reserva?' },
+                { role: 'client', content: 'Familia Rodriguez.' },
+                { role: 'ai', content: 'Gracias. Sí tenemos disponibilidad en la terraza. ¿Algún cumpleañero o alergia que debamos saber?' },
+                { role: 'client', content: 'Es mi cumpleaños.' },
+                { role: 'ai', content: '¡Felicidades! Tendremos un postre especial listo. Reserva confirmada: 4 personas, 8:00 PM.' }
             ],
             tecnico: [
                 { role: 'client', content: 'Mi refrigerador no enfría bien.' },
-                { role: 'ai', content: 'Siento oír eso. ¿De casualidad hace algún ruido extraño o el panel digital muestra algún error?' },
-                { role: 'client', content: 'Hace un pitido constante.' },
-                { role: 'ai', content: 'Parece un error de sensor. El técnico puede pasar hoy entre 2 y 4 PM. ¿Alguien estará en casa?' }
+                { role: 'ai', content: 'Siento oír eso. ¿Cuál es tu nombre y la marca de tu refrigerador?' },
+                { role: 'client', content: 'Eduardo, es un Samsung.' },
+                { role: 'ai', content: 'Gracias Eduardo. Parece un problema común. El técnico puede pasar hoy entre 2 y 4 PM. ¿Te queda bien?' },
+                { role: 'client', content: 'Sí, perfecto.' },
+                { role: 'ai', content: '¡Listo! El técnico Luis te visitará hoy entre 2 y 4 PM. Te avisará 15 min antes de llegar.' }
             ],
             inmobiliaria: [
                 { role: 'client', content: 'Vi el depa de 2 habitaciones, ¿puedo verlo mañana?' },
-                { role: 'ai', content: '¡Claro! Ese depa está disponible. Tengo llaves para mostrarlo a las 11:00 AM o 4:00 PM. ¿Cuál te queda mejor?' }
+                { role: 'ai', content: '¡Claro! Ese depa está disponible. ¿Cuál es tu nombre?' },
+                { role: 'client', content: 'Karla Torres.' },
+                { role: 'ai', content: 'Hola Karla. Tengo llaves para mostrarlo a las 11:00 AM o 4:00 PM. ¿Cuál prefieres?' },
+                { role: 'client', content: 'A las 11:00 AM.' },
+                { role: 'ai', content: 'Agendado, Karla. Nos vemos mañana a las 11:00 AM en la torre principal.' }
             ],
             academia: [
                 { role: 'client', content: '¿Cuándo inician las clases de nivel básico?' },
-                { role: 'ai', content: '¡Hola! El nuevo ciclo inicia el próximo lunes. ¿Deseas que te envíe el temario y el link para la prueba de nivel gratuita?' }
+                { role: 'ai', content: '¡Hola! Soy CitasIA. ¿A quién tengo el gusto de saludar?' },
+                { role: 'client', content: 'Luis Fernandez.' },
+                { role: 'ai', content: 'Hola Luis. Inician el próximo lunes. ¿Deseas que te envíe el temario y el link para la prueba de nivel gratuita?' },
+                { role: 'client', content: 'Sí, por favor.' },
+                { role: 'ai', content: '¡Enviado, Luis! Revisa tu WhatsApp para los detalles. ¡Nos vemos en clase!' }
             ],
             veterinaria: [
                 { role: 'client', content: 'Mi perro está vomitando mucho.' },
-                { role: 'ai', content: '¡Atención! Eso puede ser una emergencia. ¿Hace cuánto empezó? Te recomiendo traerlo a urgencias ahora mismo, estamos abiertos.' }
+                { role: 'ai', content: '¡Atención! Eso puede ser una emergencia. ¿Cuál es tu nombre y el de tu mascota?' },
+                { role: 'client', content: 'Andrés y mi perro se llama Toby.' },
+                { role: 'ai', content: 'Andrés, trae a Toby a urgencias ahora mismo. Estamos preparados para recibirlos de inmediato.' }
             ],
             mecanico: [
                 { role: 'client', content: '¿Cuánto sale el cambio de aceite para un Kia?' },
-                { role: 'ai', content: 'Hola. El servicio básico con aceite sintético sale en $65. Incluye revisión de frenos. ¿Te agendo para el sábado?' }
+                { role: 'ai', content: 'Hola. El servicio básico sale en $65 e incluye revisión de frenos. ¿Cuál es tu nombre?' },
+                { role: 'client', content: 'Jorge Ruiz.' },
+                { role: 'ai', content: 'Hola Jorge. Tengo cupo este sábado a las 9:00 AM. ¿Te agendo?' },
+                { role: 'client', content: 'Sí, de una.' },
+                { role: 'ai', content: '¡Listo, Jorge! Te esperamos el sábado a las 9:00 AM. ¡Trae tu vehículo!' }
             ]
         };
 
@@ -1166,7 +1208,12 @@
             container.classList.add('active');
 
             let step = 0;
-            const scrollToEnd = () => body.scrollTop = body.scrollHeight;
+            const scrollToEnd = () => {
+                body.scrollTo({
+                    top: body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            };
 
             function nextStep() {
                 if (step >= simulations[industry].length) return;
@@ -1186,15 +1233,15 @@
                         body.removeChild(typing);
                         addMessage(msg);
                         step++;
-                        setTimeout(nextStep, 1500);
-                    }, 1500);
+                        setTimeout(nextStep, 2000);
+                    }, 1800);
                 } else {
                     // Si es el cliente, aparece más rápido
                     setTimeout(() => {
                         addMessage(msg);
                         step++;
                         setTimeout(nextStep, 1000);
-                    }, 500);
+                    }, 800);
                 }
             }
 
