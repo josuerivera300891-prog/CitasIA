@@ -1098,15 +1098,17 @@ h4 {
 
 .audience-card {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: var(--spacing-4);
-    padding: var(--spacing-4) var(--spacing-5);
+    padding: var(--spacing-6);
     background: var(--color-white);
     border-radius: var(--radius-xl);
     border: 1px solid var(--color-gray-100);
     transition: all var(--transition-base);
     opacity: 0;
     transform: translateY(10px);
+    cursor: default;
 }
 
 .audience-card.animate-in {
@@ -1119,6 +1121,13 @@ h4 {
     border-color: var(--color-primary-light);
     box-shadow: var(--shadow-lg);
     transform: translateY(-4px);
+}
+
+.audience-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    width: 100%;
 }
 
 .audience-icon-img {
@@ -1147,8 +1156,51 @@ h4 {
 
 .audience-name {
     font-size: var(--font-size-base);
-    font-weight: 600;
+    font-weight: 700;
     color: var(--color-dark);
+}
+
+.knowledge-base {
+    width: 100%;
+    margin-top: var(--spacing-4);
+    padding-top: var(--spacing-4);
+    border-top: 1px dashed var(--color-gray-200);
+    transition: all var(--transition-base);
+}
+
+.kb-title {
+    display: block;
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-2);
+}
+
+.kb-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.kb-item {
+    font-size: 13px;
+    color: var(--color-gray-600);
+    line-height: 1.4;
+    position: relative;
+    padding-left: 14px;
+}
+
+.kb-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
 }
 
 .audience-cta {
